@@ -70,14 +70,15 @@ During 158.611682ms
 
 If you have interest in this program, you are welcome to make contribute.
 
-Or if you just want to test this program, you can go to release pages and download the program.
+Or if you just want to test this program, you can go to [release pages](https://github.com/Avimitin/GoSearchFile/releases) and download the program.
 
-> If you are not the linux-amd64 user, you can clone the project and install go to build this program. Exp like below.
+> If you are not the linux-amd64 user, you can clone the project and install go to build this program. Example like below.
 
-- Exp
+- Example
 
 ```bash
 git clone 
 cd SearchFile/cmd/Search
+vim main.go # You should edit the target and orderPath value
 go build
 ```
