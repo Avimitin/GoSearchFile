@@ -10,13 +10,15 @@ This is a pratise project for familiar with go program.
 
 - [x] Search with goroutine
 
+- [ ] Use args instead of editing program manually
+
 ## Idea
 
-- Use a goroutine pool to limit to number of goroutine, each time the program want to make new goroutine, check the pool if the amount of current runnning goroutine is more than maximum limit or not. 
+- Use a goroutine pool to limit the maximum number of goroutine, every time the program want to make new goroutine, it will send a request to check pool if the amount of current runnning goroutine is more than maximum limit or not. 
 
 - Only if the amount of current running goroutines are not more than maximum, it can make a new goroutine for searching, else it will make recursion.
 
-- Each time the program found target it will pass a boolean value to channel for add up the count.
+- Each time the program found target it will pass a boolean value to channel for adding up the count.
 
 - When the for loop done, if the method is the main method of the goroutine, it will send a boolean value to let the goroutine pool know one goroutine is over, and recover the pool.
 
