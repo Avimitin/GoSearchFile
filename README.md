@@ -10,7 +10,7 @@ This is a pratise project for familiar with go program.
 
 - [x] Search with goroutine
 
-- [ ] Use args instead of editing program manually
+- [x] Use args instead of editing program manually
 
 ## Idea
 
